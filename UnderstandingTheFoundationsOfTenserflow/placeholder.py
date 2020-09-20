@@ -14,6 +14,6 @@ sess = tf.Session()
 print('sum(x): ', sess.run(sum_x, feed_dict = {x: [100,200,300]}))
 print('prod(y): ', sess.run(prod_y, feed_dict = {y: [1,2,3]}))
 
-writer = tf.compat.v1.summary.FileWriter('m3_example1', sess.graph)
+writer = tf.compat.v1.summary.FileWriter('m3_example2', sess.graph)
 writer.close()
 sess.close()
